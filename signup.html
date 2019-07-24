@@ -1,0 +1,233 @@
+<!doctype>
+<html>
+<head>
+<title>forms</title>
+<style type="text/css">
+	body{
+		overflow-x: hidden;
+	}	
+	input,select,span,textarea{
+		margin-top: 18px;
+		margin-left:20px; 
+	}
+	input,select{
+		border-radius: 50px;
+		border-color: blue;
+		padding: 5px;
+	}
+	textarea{
+		border-radius: 5px;
+		border-color: blue;
+	}
+	h1{
+		margin: -12px;
+		background-color: #000;
+		color: white;
+		position: sticky;
+		top: 0px;
+		margin-bottom: 20px;
+	}
+	th{padding: 5px;
+		text-align: left;
+	}
+	body{
+		background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/05/15/88/5159afd18b309b9.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	
+
+</style>
+<script type="text/javascript">
+	function valid() {
+
+	if(registration.fname.value==""){
+		document.getElementById("name").innerHTML="enter name";
+		registration.fname.focus();
+		return false;
+	}
+	else{
+		document.getElementById("name").innerHTML="";
+	}
+	if(registration.password.value==""){
+		document.getElementById("password").innerHTML="enter password";
+		registration.password.focus();
+		return false;
+	}
+	else{
+		document.getElementById("password").innerHTML="";
+	}
+	if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/i.test(registration.email.value))){
+		document.getElementById("email").innerHTML="enter email";
+		registration.email.focus();
+		return false;
+	}
+	else{
+		document.getElementById("email").innerHTML="";
+	}
+	if(registration.mno.value==""||registration.mno.value.length!=10||isNaN(registration.mno.value)){
+		document.getElementById("mobile").innerHTML="enter mobile";
+		registration.mno.focus();
+		return false;
+	}
+	else{
+	document.getElementById("mobile").innerHTML="";
+	}
+	if(registration.day.selectedIndex==0){
+			window.alert("select day");
+			registration.day.focus();
+			return false;
+		}
+	else if (registration.month.selectedIndex==0){
+			window.alert("select month");
+			registration.month.focus();
+			return false;
+		}
+	else if (registration.year.selectedIndex==0){
+			window.alert("select year");
+			registration.year.focus();
+			return false;
+		}
+		
+	
+	if(registration.gender[1].checked==false&&registration.gender[0].checked==false){
+		window.alert("select gender");
+		registration.gender.focus();
+		return false;
+	}
+	if(registration.eng.checked==false&&registration.tel.checked==false&&registration.hin.checked==false){
+		window.alert("select language");
+		return false;
+	}
+	if(registration.Address.value==""){
+		document.getElementById("address").innerHTML="enter address";
+		return false;
+	}
+	else{
+		document.getElementById("address").innerHTML="";
+	}
+}
+
+</script>
+</head>
+<body >
+	<center>
+		<h1>sign up</h1>
+	<table>
+<form name="registration">
+
+<tr>
+	<th>name </th> 
+	<td><input placeholder="john's"  type="text" name="fname"><span id="name"></span><br><br></td>
+</tr>
+
+<tr>
+<th>password </th> 
+<td><input type="password" placeholder="........" name="password"><span id="password"></span><br><br></td>
+</tr>
+
+<tr>
+<th>email </th>
+<td><input type="text" name="email" placeholder="john@gmail.com"><span id="email"></span><br><br></td>
+</tr>
+
+<tr>
+<th>mobile no  </th>
+<td><input type="text" name="mno" placeholder="99XXXXXXXX"><span id="mobile"></span><br><br></td>
+</tr>
+
+<tr >
+<th>dob </th> 
+<td ><select name="day">
+<option value="0">day</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select name="month">
+<option value="0">month</option>
+<option value="jan">jan</option>
+<option value="feb">feb</option>
+<option value="march">march</option>
+<option value="april">april</option>
+<option value="may">may</option>
+<option value="june">june</option>
+<option value="july">july</option>
+<option value="aug">august</option>
+<option value="sept">september</option>
+<option value="oct">october</option>
+<option value="nov">november</option>
+<option value="dec">december</option>
+</select >
+<select name="year">
+<option value="0">year</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+</select><br><br></td>
+</tr>
+
+<tr>
+<th>gender </th>   
+<td>
+	<input type="radio" name="gender" > female
+<span><input type="radio" name="gender"> male</span>  <br><br></td>
+</tr>
+
+<tr>
+	<th>language you know </th>    
+		<td>   
+			<input type="checkbox"  name="eng" value="english"> English
+  			 <span>      
+			<input type="checkbox"  name="hin" value="hindi"> Hindi</span>
+  			 <span>      
+			<input type="checkbox"  name="tel" value="telugu"> Telugu</span><br><br>
+		</td>
+</tr>
+
+<tr>	
+	<th>Address </th>
+		<td><textarea cols="27" rows="5" name ="Address"></textarea><span id="address"></span><br><br>
+		</td>
+</tr>
+
+</form>
+
+</table>
+
+<center> 
+	<BUTTON  onclick="return valid()">signup</BUTTON> 
+</center> 
+
+</center>
+</body>
+</html>

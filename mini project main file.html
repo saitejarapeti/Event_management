@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Manager</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+	crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="main page style.css">
+
+</head>
+
+<body class="body" onload="fun(4)">
+	
+		<nav class="navbar navbar-inverse navcol navbar-fixed-top" >
+	
+		<div class="navbar-center">
+			<a onclick="fun(4)" href="#" style="margin-left: 20px;" class="navbar-brand">
+			<span>
+				<img src="https://cdn2.iconfinder.com/data/icons/administrative-management-services-jobs-occupation/301/occupation-20-004-512.png" width="20" height="20" hspace="2">
+			</span>Event</a>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cols" aria-expanded="false">
+				<span class="sr-only">toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>	
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="cols">
+			<ul class="nav navbar-nav ">
+				<li><a onclick="fun(7)">about</a></li>
+				<li>
+					<a data-toggle="dropdown" >
+    				Events <span class="caret"></span>
+  					</a>
+ 				 	<ul class="dropdown-menu">
+    					<li>
+    						<a href="#">Marriage</a>
+    					</li>
+    					<li><a href="#">Birthday</a></li>
+    					<li><a href="#">public event</a></li>
+    					<li class="divider"></li>
+    					<li><a href="#">other events</a></li>
+  					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart <span id="cart" class="badge">0</span></a></li>
+				<li><a  onclick="fun(5)">signup</a></li>
+				<li><a style="margin-right: 20px;" onclick="fun(6)">login</a></li>
+			</ul>
+		</div>
+	
+</nav>
+
+<div class="container list" style="width: 18%; height:100px; position: fixed; float: left;  margin-left: 10px; " >
+		
+	<ul class="list-group" id="req">
+    	<li><a id="suppliers" onclick="fun(1)" href="#" class="list-group-item">Supliers</a></li>
+    	<li><a id="food" href="#" onclick="fun(2)" class="list-group-item">Food</a></li>
+    	<li><a id="function-hall" href="#" onclick="fun(3)" href="#" class="list-group-item">Function halls</a></li>
+    
+  	</ul>
+</div>
+<div class="container main-content">
+	
+<!--the main list containts-->
+<div class="container listmobile"  >
+    
+  <ul class="list-group" id="req">
+      <li><a id="suppliers" onclick="fun(1)"  class="list-group-item">Supliers</a></li>
+      <li><a id="food" onclick="fun(2)" class="list-group-item">Food</a></li>
+      <li><a id="function-hall" onclick="fun(3)" class="list-group-item">Function halls</a></li>
+    </ul>
+</div>
+  <!--side menu content display div-->
+  
+
+<div id="content" >
+  
+</div>
+	
+</div ><!--end of container-->
+
+
+
+
+ <script type="text/javascript">
+	
+  function fun(x){
+if(x==1){
+  document.getElementById("content").innerHTML='<object type="text/html" data="suppliers.html" style="width:100%; height:100vh; "></object>';
+}
+else if(x==2){
+  document.getElementById("content").innerHTML='<object type="text/html" data="food.html" style="width:100%; height:100vh; "></object>';
+}
+else if(x==3){
+  document.getElementById("content").innerHTML='<object type="text/html" data="Function hall.html" style="width:100%; height:100vh; "></object>';
+}
+else if(x==4){
+  document.getElementById("content").innerHTML='<object type="text/html" data="mainpage.html" style="width:100%; height:100vh; "></object>';
+}
+else if(x==5){
+  document.getElementById("content").innerHTML='<object type="text/html" data="signup.html" style="width:100%; height:100vh; "></object>';
+}
+else if(x==6){
+  document.getElementById("content").innerHTML='<object type="text/html" data="login.html" style="width:100%; height:100vh; "></object>';
+}
+else if(x==7){
+  document.getElementById("content").innerHTML='<object type="text/html" data="aboutus.html" style="width:100%; height:100vh; "></object>';
+}
+}
+</script> 
+
+
+
+</body>
+</html>

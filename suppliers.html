@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="supplier.css">
+</head>
+<body id="suppliers">
+<div>
+    <h2>Suppliers : </h2>
+
+    <div class="row">
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" >
+        <h5>Tent</h5>
+        <img class="img tumb"  src="https://akaatent.com/wp-content/uploads/2018/04/maj4.jpg" >
+        <span id="tentprice" style="float: right; width: 83px;">&#x20b9; 0</span>
+        <div style="margin-bottom: 2px; ">
+        <span><button data-toggle="dropdown" class="btn btn-sm size" >size <span class="caret"></span></button>
+          <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="tent_size" onclick="price(500,'tentprice')"> 1600*900</li>
+              <li><input type="radio" name="tent_size" onclick="price(400,'tentprice')"> 720*900</li>
+              <li><input type="radio" name="tent_size" onclick="price(300,'tentprice')"> 2060*1900</li>
+              <li><input type="radio" name="tent_size" onclick="price(200,'tentprice')"> 2960*1200</li>
+              <li><input type="radio" name="tent_size" onclick="price(100,'tentprice')"> 1360*700</li>
+            </ul></span>
+          </div>  
+          <button class="btn btn-sm atc" >Add to cart</button>
+          <button data-toggle="dropdown" class="btn btn-sm Quantity">Quantity <span class="caret"></span></button>
+            <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="quantity" onclick="quantity(1)"> 1</li>
+              <li><input type="radio" name="quantity" onclick="quantity(2)"> 2</li>
+              <li><input type="radio" name="quantity" onclick="quantity(3)"> 3</li>
+              <li><input type="radio" name="quantity" onclick="quantity(4)"> 4</li>
+              <li><input type="radio" name="quantity" onclick="quantity(5)"> 5</li>
+            </ul>
+      </div>
+    </div>
+
+      <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" >
+        <h5>Round Table</h5>
+
+        <img class="img tumb"  src="https://4.imimg.com/data4/LM/TP/ANDROID-37319350/product-500x500.jpeg" >
+        <span id="rtprice" style="float: right; width: 83px;">&#x20b9; 0</span>
+        <div style="margin-bottom: 2px; ">
+        <span><button data-toggle="dropdown" class="btn btn-sm size" >size <span class="caret"></span></button>
+          <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="roundtable" onclick="price(300,'rtprice')"> big</li>
+              <li><input type="radio" name="roundtable" onclick="price(200,'rtprice')"> medium</li>
+              <li><input type="radio" name="roundtable" onclick="price(100,'rtprice')"> small</li>
+             
+            </ul></span>
+          </div>  
+          <button class="btn btn-sm atc" >Add to cart</button>
+          <button data-toggle="dropdown" class="btn btn-sm Quantity">Quantity <span class="caret"></span></button>
+             <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="quantity" onclick="quantity(1)"> 1</li>
+              <li><input type="radio" name="quantity" onclick="quantity(2)"> 2</li>
+              <li><input type="radio" name="quantity" onclick="quantity(3)"> 3</li>
+              <li><input type="radio" name="quantity" onclick="quantity(4)"> 4</li>
+              <li><input type="radio" name="quantity" onclick="quantity(5)"> 5</li>
+            </ul>
+      </div>
+    </div>
+    
+        <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" >
+        <h5>Jug</h5>
+
+        <img class="img tumb"  src="https://p.globalsources.com/IMAGES/PDT/BIG/698/B1122651698.jpg" >
+        <span id="jugprice" style="float: right; width:83px;">&#x20b9; 0</span>
+        <div style="margin-bottom: 2px; ">
+        <span><button data-toggle="dropdown" class="btn btn-sm size" >size <span class="caret"></span></button>
+          <ul class="dropdown-menu tumb">
+               <li><input type="radio" name="jug" onclick="price(40,'jugprice')"> big</li>
+              <li><input type="radio" name="jug" onclick="price(30,'jugprice')"> medium</li>
+              <li><input type="radio" name="jug" onclick="price(20,'jugprice')"> small</li>
+            </ul></span>
+          </div>  
+          <button class="btn btn-sm atc" >Add to cart</button>
+          <button data-toggle="dropdown" class="btn btn-sm Quantity">Quantity <span class="caret"></span></button>
+             <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="quantity" onclick="quantity(1)"> 1</li>
+              <li><input type="radio" name="quantity" onclick="quantity(2)"> 2</li>
+              <li><input type="radio" name="quantity" onclick="quantity(3)"> 3</li>
+              <li><input type="radio" name="quantity" onclick="quantity(4)"> 4</li>
+              <li><input type="radio" name="quantity" onclick="quantity(5)"> 5</li>
+            </ul>
+      </div>
+    </div>
+    
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" >
+        <h5>Tower A/C</h5>
+
+        <img class="img tumb"  src="https://5.imimg.com/data5/JG/GH/MY-35218354/2-5-ton-tower-ac-unit-500x500.jpg" >
+        <span id="acprice" style="float: right; width: 83px;">&#x20b9; 0</span>
+        <div style="margin-bottom: 2px; ">
+        <span><button data-toggle="dropdown" class="btn btn-sm size" >size <span class="caret"></span></button>
+          <ul class="dropdown-menu tumb">
+               <li><input type="radio" name="towerac" onclick="price(1000,'acprice')"> big</li>
+              <li><input type="radio" name="towerac" onclick="price(500,'acprice')"> medium</li>
+              <li><input type="radio" name="towerac" onclick="price(300,'acprice')"> small</li>
+            </ul></span>
+          </div>  
+          <button class="btn btn-sm atc" >Add to cart</button>
+          <button data-toggle="dropdown" class="btn btn-sm Quantity">Quantity <span class="caret"></span></button>
+             <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="quantity" onclick="quantity(1)"> 1</li>
+              <li><input type="radio" name="quantity" onclick="quantity(2)"> 2</li>
+              <li><input type="radio" name="quantity" onclick="quantity(3)"> 3</li>
+              <li><input type="radio" name="quantity" onclick="quantity(4)"> 4</li>
+              <li><input type="radio" name="quantity" onclick="quantity(5)"> 5</li>
+            </ul>
+      </div>
+    </div>
+    </div><!--end of row-->
+    </div><!--end of suppliers-->
+
+<script type="text/javascript">
+      var pri,quant,price_display;
+      function price(x,z){
+        pri=x;
+        price_display=z;
+        if(quant>0){
+          pdisplay(pri,quant,price_display);
+        }
+      }
+      function quantity(y){
+        quant=y;
+        if(pri>0){
+          pdisplay(pri,quant,price_display);
+        }
+        
+      }
+      function pdisplay(x,y,z){
+        var fp=x*y;
+        document.getElementById(z).innerHTML = "&#x20b9; "+fp;
+      }
+    </script>
+
+</body>
+</html>

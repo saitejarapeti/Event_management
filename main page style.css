@@ -1,0 +1,41 @@
+
+  /*main page stylesheet*/
+
+
+  .body{
+    padding-top: 70px;
+    background-color: rgba(0,0,0,.7);
+  }
+  @media (max-width: 780px){
+    .container.list{
+      display: none;
+}
+    .container.main-content{
+      width: 100%;
+    }
+    .list-group > li{
+      float: left;
+      margin:20px;
+    }
+
+  }
+
+   @media (min-width: 780px){
+  .container.main-content{
+    overflow-x: hidden;
+    float: right; 
+    width: 82%;
+  }  
+   .container.listmobile{
+     display: none; 
+    }
+}
+
+ul{
+    list-style-type: none;
+}
+#suppliers,#food,#function-hall{
+  margin-bottom: 20px;
+}
+
+

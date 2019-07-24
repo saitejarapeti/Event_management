@@ -1,0 +1,31 @@
+/*Function hall stylesheet*/
+
+.img.fhallimg{
+  width: 30%;
+  height: 200px;
+  border-radius: 10px;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.info{
+  margin-top: -10px;
+  width: 60%;
+  float: right;
+  margin-left: 10px;
+  color: white;
+}
+.thumbnail{
+	background-color: black;
+}
+
+#functionhall{
+  background-color: rgba(0,0,0,.45);
+  padding-left: 30px;
+  padding-right: 30px;  
+  overflow-x: hidden; 
+}
+
+h2{
+  color: white;
+}

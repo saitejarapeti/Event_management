@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>food</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="food.css">
+</head>
+<body id="food">
+<div >
+    <h2>FOOD : </h2>
+
+    <div class="row">
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" >
+        <h5>chicken Biriyani</h5>
+
+        <img class="img tumb"  src="https://images.food52.com/6QSbl1_0Wm_fCDyaeCVIeWD295M=/1200x900/d815e816-4664-472e-990b-d880be41499f--chicken-biryani-recipe.jpg" >
+        <span id="cbprice" style="float: right; width: 83px;">&#x20b9; 0</span>
+        <div style="margin-bottom: 2px; ">
+        <span><button data-toggle="dropdown" class="btn btn-sm hotel" >Hotel<span class="caret"></span></button>
+          <ul class="dropdown-menu tumb">
+           <li><input type="radio" name="hotel" onclick="price(300,'cbprice')">Tycoon Multi-Cuisine Restaurant</li>
+           <li><input type="radio" name="hotel" onclick="price(250,'cbprice')">Flying Spaghetti Monster</li>
+              <li><input type="radio" name="hotel" onclick="price(200,'cbprice')">Dharani Restaurant</li>
+              <li><input type="radio" name="hotel" onclick="price(230,'cbprice')">Horizon Restaurant</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'cbprice')">Kamat Restaurant</li>
+            </ul></span>
+          </div>  
+          <button class="btn btn-sm atc" >Add to cart</button>
+          <button data-toggle="dropdown" class="btn btn-sm Quantity">Quantity <span class="caret"></span></button>
+            <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="Quantity" onclick="quantity(100)"> 100</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(200)"> 200</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(300)"> 300</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(400)"> 400</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(500)"> 500</li>
+            </ul>
+      </div>
+    </div>
+
+       <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" >
+        <h5>Fried Rice (veg)</h5>
+
+        <img class="img tumb"  src="https://www.seriouseats.com/recipes/images/2016/01/20160206-fried-rice-food-lab-68-1500x1125.jpg" >
+        <span id="frprice" style="float: right; width: 83px;">&#x20b9; 0</span>
+        <div style="margin-bottom: 2px; ">
+        <span><button data-toggle="dropdown" class="btn btn-sm hotel" >Hotel<span class="caret"></span></button>
+          <ul class="dropdown-menu tumb">
+           <li><input type="radio" name="hotel" onclick="price(250,'frprice')">Tycoon Multi-Cuisine Restaurant</li>
+           <li><input type="radio" name="hotel" onclick="price(210,'frprice')">Flying Spaghetti Monster</li>
+              <li><input type="radio" name="hotel" onclick="price(200,'frprice')">Dharani Restaurant</li>
+              <li><input type="radio" name="hotel" onclick="price(220,'frprice')">Horizon Restaurant</li>
+              <li><input type="radio" name="hotel" onclick="price(270,'frprice')">Kamat Restaurant</li>
+            </ul></span>
+          </div>  
+          <button class="btn btn-sm atc" >Add to cart</button>
+          <button data-toggle="dropdown" class="btn btn-sm Quantity">Quantity <span class="caret"></span></button>
+            <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="Quantity" onclick="quantity(100)"> 100</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(200)"> 200</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(300)"> 300</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(400)"> 400</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(500)"> 500</li>
+            </ul>
+      </div>
+    </div>
+    
+         <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" >
+        <h5>PaniPuri</h5>
+
+        <img class="img tumb"  src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sneha-archanaskitchen.com/Sweet__Spicy_Pineapple_Pani_Puri_Recipe_.jpg" >
+        <span id="panipuri" style="float: right; width: 83px;">&#x20b9; 0</span>
+        <div style="margin-bottom: 2px; ">
+        <span><button data-toggle="dropdown" class="btn btn-sm hotel" >Hotel<span class="caret"></span></button>
+          <ul class="dropdown-menu tumb">
+           <li><input type="radio" name="hotel" onclick="price(250,'panipuri')">Sweet India</li>
+           <li><input type="radio" name="hotel" onclick="price(250,'panipuri')">Laddu Gopal</li>
+            <li><input type="radio" name="hotel" onclick="price(250,'panipuri')">Sweet magic</li>
+            <li><input type="radio" name="hotel" onclick="price(250,'panipuri')">Sarvani</li>
+            <li><input type="radio" name="hotel" onclick="price(250,'panipuri')">Chandu sweets</li>
+            </ul></span>
+          </div>  
+          <button class="btn btn-sm atc" >Add to cart</button>
+          <button data-toggle="dropdown" class="btn btn-sm Quantity">Quantity <span class="caret"></span></button>
+             <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="Quantity" onclick="quantity(100)"> 100</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(200)"> 200</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(300)"> 300</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(400)"> 400</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(500)"> 500</li>
+            </ul>
+      </div>
+    </div>
+
+     <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" >
+        <h5>VEG Meal's</h5>
+
+        <img class="img tumb"  src="http://www.smartcityfood.in/media/catalog/product/cache/1/image/800x600/f31b0cfd465b5145025020710a9577fb/s/o/south_indian_meals.jpg" >
+        <span id="vmprice" style="float: right; width: 83px;">&#x20b9; 0</span>
+        <div style="margin-bottom: 2px; ">
+        <span><button data-toggle="dropdown" class="btn btn-sm hotel" >Hotel<span class="caret"></span></button>
+          <ul class="dropdown-menu tumb">
+           <li><input type="radio" name="hotel" onclick="price(250,'vmprice')">Tycoon Multi-Cuisine Restaurant</li>
+           <li><input type="radio" name="hotel" onclick="price(250,'vmprice')">Flying Spaghetti Monster</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'vmprice')">Dharani Restaurant</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'vmprice')">Horizon Restaurant</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'vmprice')">Kamat Restaurant</li>
+            </ul></span>
+          </div>  
+          <button class="btn btn-sm atc" >Add to cart</button>
+          <button data-toggle="dropdown" class="btn btn-sm Quantity">Quantity <span class="caret"></span></button>
+            <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="Quantity" onclick="quantity(100)"> 100</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(200)"> 200</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(300)"> 300</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(400)"> 400</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(500)"> 500</li>
+            </ul>
+      </div>
+    </div>
+    </div><!--end of row-->
+
+    <div class="row">
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" >
+        <h5>Apollo Fish</h5>
+
+        <img class="img tumb"  src="https://i0.wp.com/www.wahrecipes.com/wp-content/uploads/2018/08/Apollo-Fish-Fry.jpg?fit=1000%2C500&ssl=1" >
+        <span id="afprice" style="float: right; width: 83px;">&#x20b9; 0</span>
+        <div style="margin-bottom: 2px; ">
+        <span><button data-toggle="dropdown" class="btn btn-sm hotel" >Hotel <span class="caret"></span></button>
+          <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="hotel" onclick="price(250,'afprice')">Tycoon Multi-Cuisine Restaurant</li>
+           <li><input type="radio" name="hotel" onclick="price(250,'afprice')">Flying Spaghetti Monster</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'afprice')">Dharani Restaurant</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'afprice')">Horizon Restaurant</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'afprice')">Kamat Restaurant</li>
+            </ul></span>
+          </div>  
+          <button class="btn btn-sm atc" >Add to cart</button>
+          <button data-toggle="dropdown" class="btn btn-sm Quantity">Quantity <span class="caret"></span></button>
+             <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="Quantity" onclick="quantity(100)"> 100</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(200)"> 200</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(300)"> 300</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(400)"> 400</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(500)"> 500</li>
+            </ul>
+      </div>
+    </div>
+
+      <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" >
+        <h5>Dragon Chicken</h5>
+
+        <img class="img tumb"  src="https://www.jinooskitchen.com/wp-content/uploads/2018/07/dragon-chicken-final.jpg" >
+        <span id="dcprice" style="float: right; width: 83px;">&#x20b9; 0</span>
+        <div style="margin-bottom: 2px; ">
+        <span><button data-toggle="dropdown" class="btn btn-sm hotel" >Hotel <span class="caret"></span></button>
+           <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="hotel" onclick="price(250,'dcprice')">Tycoon Multi-Cuisine Restaurant</li>
+           <li><input type="radio" name="hotel" onclick="price(250,'dcprice')">Flying Spaghetti Monster</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'dcprice')">Dharani Restaurant</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'dcprice')">Horizon Restaurant</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'dcprice')">Kamat Restaurant</li>
+            </ul></span>
+          </div>  
+          <button class="btn btn-sm atc" >Add to cart</button>
+          <button data-toggle="dropdown" class="btn btn-sm Quantity">Quantity <span class="caret"></span></button>
+            <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="Quantity" onclick="quantity(100)"> 100</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(200)"> 200</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(300)"> 300</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(400)"> 400</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(500)"> 500</li>
+            </ul>
+      </div>
+    </div>
+    
+        <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" >
+        <h5>Veg Biryani</h5>
+
+        <img class="img tumb"  src="https://i1.wp.com/www.cookingfromheart.com/wp-content/uploads/2017/09/Veg-Biryani-in-Pressure-Cooker-6.jpg?resize=1024%2C680" >
+        <span id="vbprice" style="float: right; width: 83px;">&#x20b9; 0</span>
+        <div style="margin-bottom: 2px; ">
+        <span><button data-toggle="dropdown" class="btn btn-sm hotel" >Hotel <span class="caret"></span></button>
+           <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="hotel" onclick="price(250,'vbprice')">Tycoon Multi-Cuisine Restaurant</li>
+           <li><input type="radio" name="hotel" onclick="price(250,'vbprice')">Flying Spaghetti Monster</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'vbprice')">Dharani Restaurant</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'vbprice')">Horizon Restaurant</li>
+              <li><input type="radio" name="hotel" onclick="price(250,'vbprice')">Kamat Restaurant</li>
+            </ul></span>
+          </div>  
+          <button class="btn btn-sm atc" >Add to cart</button>
+          <button data-toggle="dropdown" class="btn btn-sm Quantity">Quantity <span class="caret"></span></button>
+            <ul class="dropdown-menu tumb">
+              <li><input type="radio" name="Quantity" onclick="quantity(100)"> 100</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(200)"> 200</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(300)"> 300</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(400)"> 400</li>
+              <li><input type="radio" name="Quantity" onclick="quantity(500)"> 500</li>
+            </ul>
+      </div>
+    </div>
+    </div><!--end of row-->
+    </div><!--end of food-->
+
+
+    <script type="text/javascript">
+      var pri,quant,price_display;
+      function price(x,z){
+        pri=x;
+        price_display=z;
+        if(quant>0){
+          pdisplay(pri,quant,price_display);
+        }
+      }
+      function quantity(y){
+        quant=y;
+        if(pri>0){
+          pdisplay(pri,quant,price_display);
+        }
+        
+      }
+      function pdisplay(x,y,z){
+        var fp=x*y;
+        document.getElementById(z).innerHTML = "&#x20b9; "+fp;
+      }
+
+
+
+    </script>
+</body>
+</html>

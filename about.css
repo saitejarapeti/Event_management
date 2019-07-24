@@ -1,0 +1,66 @@
+/*About us*/
+
+*{
+font-family:cursive;
+color: #fff;
+align-content: center;
+}
+body{
+	background-color: rgb(0,0,0,.65);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1{
+	margin-top: 30px;
+	text-align: left;
+	margin-left: 7%;
+}
+
+
+
+.border{
+	display:block;
+	margin:auto;
+	width:30%;
+	height:3px;
+	background:#fff000;
+	margin-bottom:50px;
+}
+
+
+.mainborder{
+	display:block;
+	margin:auto;
+	width:90%;
+	height:3px;
+	background:#000fff;
+	margin-bottom:50px;
+}
+
+img
+{
+	display:inline-block;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	margin-right: 50px;
+	float: left;
+	left: 10%;
+	width:160px;
+	overflow:hidden;
+	border-radius:50%;
+	
+}
+
+p{
+	height: 150px;
+	position: relative;
+}
+
+
+.name{
+	display:block;
+	margin-bottom:30px;
+	text-align:center;
+	font-size:22px;
+}

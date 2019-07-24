@@ -1,0 +1,43 @@
+/*FOOD CSS*/
+.dropdown-menu.tumb{
+    margin: 2px;
+    top: 92%;
+    left: 6%;
+    padding: 2px;
+
+  }
+  .img.tumb{
+    width: 95%;
+    height: 200px;
+    margin-bottom: 5px;
+  }
+  h5{
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0,0,0,.6);
+  }
+  /*add to cart*/
+  .atc{
+    float: right; 
+    background-color:  red;
+  }
+
+  .hotel{
+    background-color: #1570E5;
+    color: white;
+    width: 70px;
+  }
+  .Quantity{
+    background-color: #3B8DF6;
+    color: white;
+    width: 70px;
+  }
+  #food{
+  background-color: rgba(0,0,0,.45);
+     padding-left: 30px;
+     padding-right: 30px;  
+     overflow-x: hidden;
+  }
+h2{
+  color: white;
+}

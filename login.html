@@ -1,0 +1,102 @@
+<!doctype>
+<html>
+<head>
+<title>forms</title>
+<style type="text/css">
+
+	input,span,textarea{
+		margin-top: 18px;
+		margin-left:20px; 
+	}
+	input{
+		border-radius: 50px;
+		border-color: blue;
+		padding: 5px;
+	}
+	
+	img{
+		padding-top: 10px;
+		width: 20px;
+		height: 20px;
+	}
+	h1{
+		margin: -12px;
+		background-color: #000;
+		color: white;
+		position: sticky;
+		top: 0px;
+		margin-bottom: 20px;
+	}
+	th{padding: 5px;
+		text-align: left;
+	}
+	a{
+		margin-left: 20px;
+	}
+	body{
+		background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/05/15/88/5159afd18b309b9.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+</style>
+<script type="text/javascript">
+	function valid() {
+
+	if(registration.fname.value==""){
+		document.getElementById("name").style.visibility="visible";
+		registration.fname.focus();
+		return false;
+	}
+	else{
+		document.getElementById("name").style.visibility="hidden";
+	}
+	if(registration.password.value==""){
+		document.getElementById("password").style.visibility="visible";
+		registration.password.focus();
+		return false;
+	}
+	else{
+		document.getElementById("password").style.visibility="hidden";
+	}
+	if(registration.fname.value!=""&&registration.password.value!=""){
+		window.location.href="mainpage.html";
+	}
+	
+}
+
+</script>
+</head>
+<body >
+	<center>
+		<h1>Login</h1>
+	<table>
+<form name="registration">
+
+<tr>
+	<th>UserName </th> 
+	<td><input placeholder="john's"  type="text" name="fname"><span ><img id="name" src="Error.png" style="visibility: hidden;"></span><br><br></td>
+</tr>
+
+<tr>
+<th>Password </th> 
+<td><input type="password" placeholder="........" name="password"><span ><img id="password" src="Error.png" style="visibility: hidden;"></span><br><br></td>
+</tr>
+
+<tr>
+<th>Remember me!</th> 
+<td><input type="checkbox" name="Remember"> <a href="">Forget Password</a><br><br></td>
+</tr>
+
+</form>
+
+</table>
+
+<center> 
+	<BUTTON  onclick="return valid()">login</BUTTON> 
+	<BUTTON ><a href="signup.html">register</a></BUTTON> 
+</center> 
+
+</center>
+</body>
+</html>

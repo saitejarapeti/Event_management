@@ -1,0 +1,32 @@
+
+/*event main page*/
+
+h1{
+	margin-left: 20px;
+	color: #f0f0f0;
+
+}
+h3{
+	color: white;
+	text-align: center;
+}
+img{
+	width: 100%;
+
+}
+#mainpage{
+  background-color: rgba(0,0,0,.85);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;  
+  overflow-x: hidden;
+  }
+  .jumbotron{
+  	margin-top: 20px;
+  	background-image: url(https://i.pinimg.com/originals/6b/5c/63/6b5c63b70af08010e02e8f16c48832a0.jpg);
+ 	background-size: cover;
+  }
+#suppliers,#food,#function-hall{
+  margin-bottom: 20px;
+}
+
